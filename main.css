@@ -15,21 +15,33 @@ header {
   justify-content: space-between;
 }
 
-.icon {
+.img-hover {
+  position: relative;
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  background-image: url("assets/Ponysona_orange.png");
+  overflow: hidden;
+}
+.img {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
+  transition: opacity 1s ease;
+}
+.img-default {
+  background-image: url("assets/Ponysona_orange.png");
+  opacity: 1;
+}
+.img-hovered {
+  background-image: url("assets/Ponysona_trans.png");
   opacity: 0;
 }
-.icon:hover {
-  width: 40px;
-  height: 40px;
-  background-image: url("assets/Ponysona_trans.png");
+.img-hover:hover .img-hovered {
   opacity: 1;
-  transition: opacity 1s ease;
+}
+.img-hover:hover .img-default {
+  opacity: 0;
 }
 .logo p, h1{
   margin: 0;
