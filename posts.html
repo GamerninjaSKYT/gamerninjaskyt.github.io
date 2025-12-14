@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gamerninja´s website</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div id="header"></div>
+  <script>
+    fetch("parts/header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+
+  <section class="content">
+    <h1 style="text-align: center; color: orangered;">Work In Progress</h1>
+  </section>
+
+  <div id="footer"></div>
+  <script>
+    fetch("parts/footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+</body>
+</html>
