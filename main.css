@@ -22,12 +22,14 @@ header {
   background-image: url("assets/Ponysona_orange.png");
   background-size: cover;
   background-position: center;
+  opacity: 0;
 }
 .icon:hover {
   width: 40px;
   height: 40px;
   background-image: url("assets/Ponysona_trans.png");
-  transition: background-image 1s ease;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 .logo p, h1{
   margin: 0;
