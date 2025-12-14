@@ -25,11 +25,14 @@
     <p>I speak Slovak, English and toki pona</p>
     <br>
     <p>I am bisexual but more specifically finsexual (attraction to feminine people of any gender, though of course femininity is subjective and me being attracted to you doesnt mean you are a girl)</p>
+    <img src="assets/transtrixie.jpg" style="width: 400px; height: auto;" alt="Trixie from My Little Pony saying 'I can't believe I'm gay and also transgender'">
   </section>
 
-  <footer>
-    <p>Last updated : December 14th 2025</p>
-    <p>That is Mithuna 25th 221 in the Mars calendar</p>
-  </footer>
+  <div id="footer"></div>
+  <script>
+    fetch("parts/footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
 </body>
 </html>
