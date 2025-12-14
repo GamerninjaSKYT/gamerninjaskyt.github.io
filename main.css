@@ -92,3 +92,19 @@ footer {
   background: #111;
   color: #ccc;
 }
+
+
+.post {
+  height: auto;
+  border-radius: 15px 15px 15px 0;
+  border: black 3px solid;
+  margin-top: 30px;
+  padding: 10px;
+}
+.post h1 {
+  text-align: center;
+}
+.post h5 {
+  text-align: right;
+  margin-bottom: 0;
+}
