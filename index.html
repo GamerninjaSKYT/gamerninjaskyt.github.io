@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <title>lipu pi jan Kalisa</title>
-    <link rel='stylesheet' type='text/css' href='index.css'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gamerninja´s website</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    
+  <div id="header"></div>
+  <script>
+    fetch("parts/header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+
+  <section class="banner">
+    <h2>Happy Holidays!</h2>
+    <p>I hope you will have a nice winter and Christmas</p>
+  </section>
+
+  <section class="content">
+    <h1>Hewo! I´m Gamer, also known as Klára or Clara</h1>
+    <p>I am a trans girl who uses it/she pronouns and I am a changeling who also likes being in its pony form, specifically a pegas pony form.</p>
+    <p>When I say that I´m a changeling, I mean it :3 I´m what´s called an otherkin or therian! An individual who doesnt identify as human.</p>
+    <p>And also I´m inside a plural system of 4, including me there are 4 people in this brain. Their names are Therix, Rose and Jane.</p>
+    <p>My hobbies and interests include worldbuilding, gaming, coding, conlanging, drawing, math, My Little Pony, Mars, aliens and more!</p>
+    <p>And lastly, I really like understanding different people and I try to be as kind as I can!</p>
+    <br>
+    <p>I speak Slovak, English and toki pona</p>
+    <br>
+    <p>I am bisexual but more specifically finsexual (attraction to feminine people of any gender, though of course femininity is subjective and me being attracted to you doesnt mean you are a girl)</p>
+  </section>
+
+  <footer>
+    <p>Last updated : December 14th 2025</p>
+    <p>That is Mithuna 25th 221 in the Mars calendar</p>
+  </footer>
 </body>
 </html>
